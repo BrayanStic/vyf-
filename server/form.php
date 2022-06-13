@@ -97,7 +97,7 @@ if($procesado){
 		$mail->isSMTP();
 		$mail->Host       = 'smtp.gmail.com';
 		$mail->SMTPAuth   = true;
-		$mail->Username   = 'vitamento.gmail.com';
+		$mail->Username   = 'vitamento.gmail.com+';
 		$mail->Password   = $_ENV['PORFOLIO_MAIL_PASS'];
 		$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 		$mail->Port       = 465;

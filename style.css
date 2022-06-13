@@ -55,50 +55,74 @@ header{
 
   
   /*Hace que el header se quede en pantalla*/
-  .header2{ 
-    background: rgb(77,75,75);
-    position:fixed;
-    height:20px;
-    opacity: .8;
-  }
   
-  /*Propiedades del logo del header*/
-  .header2 .logo{
-    width: 200px;
-    height: 60px;
-    padding: 10px 10px 10px 10px;
-  }
-  
-  .header2 nav{
-    padding: 14px 2px;
-  }
 
-  .header2 nav a {
-    font-size: 15px;
-  }
-  
   .content p{
     margin-bottom:1em;
   }
   /*Centra el contenido que se encuentra en el header*/
-  @media screen and (max-width:1050px){
-    header .logo,
-    header nav{
-      width:100%;
+  @media screen and (max-width: 640px) {
+    header .logo{
+      width:200px;
+      height: 60px;
       text-align:center;
-      line-height:75px;
+      padding: 1em 6.5em;
+    }
+    header nav{
+     padding: 0em;
+     line-height: 0px;
+     padding-bottom: 1em;
+     text-align: center;
     }
   }
   
-.header2{
-    height:auto;
-}
-  
-.header2 .logo,
-  .header2 nav{
-    line-height:50px;
-}
+  @media screen and (min-width: 640px) and (max-width: 1280px) {
+    header nav{
+      width:30%;
+      padding-top: 2em;
+      text-align:center;
+      line-height:10px;
+    }
+  }
 
+  @media screen and (min-width: 1280px) and (max-width: 1280px) {
+    .header2{ 
+        background: rgb(77,75,75);
+        position:fixed;
+        height:20px;
+        opacity: .8;
+    }
+      
+      /*Propiedades del logo del header*/
+    .header2 .logo{
+        width: 200px;
+        height: 60px;
+        padding: 10px 10px 10px 10px;
+    }
+      
+    .header2 nav{
+        padding: 14px 2px;
+    }
+    
+    .header2 nav{
+        padding: 14px 2px;
+    }
+    .header2 nav, .header2 .logo{
+      line-height: 50px;
+    }
+    .header2 nav a {
+        font-size: 15px;
+    }
+    .header2{
+        height:auto;
+    }
+      
+    .header2 .logo,
+      .header2 nav{
+        line-height:50px;
+    }
+  }
+    
 .banner{
     width: auto;
     background-image:url(img/banner.jpg);
@@ -118,6 +142,15 @@ header{
     font-size: 30px;
     font-weight: 100;
     padding: 0em 0em 10em 0em;
+}
+
+@media screen and (max-width: 640px) {
+    .titulo_principal{  
+        font-size: 50px;
+    }
+    .subtitulo{
+        font-size: 15px;
+    }
 }
 
 .parrafo{
@@ -152,6 +185,12 @@ header{
     padding: 0em 30em 5em 30em;
     font-family: sans-serif;
     color:rgb(77,75,75);
+}
+
+@media screen and (max-width: 640px) {
+    .text{
+        padding: 0em 2em 5em 2em;
+    }
 }
 
 .area{
@@ -212,6 +251,17 @@ header{
     margin-top: 10px;
 }
 
+@media screen and (max-width: 640px) {
+    .productos{
+        padding-left: 8em;
+    }
+    .productos li{
+        display:block;
+        margin-bottom: 1.5em;}
+
+}
+
+
 .botonEnviar1{
     text-align: center;
     padding-top: 4em;
@@ -235,6 +285,12 @@ header{
     transform: scale(1.2);
 }
 
+@media screen and (max-width: 640px) {
+    .enviar1{
+        width: 50%;
+    }
+}
+
 .imgA{
     width: 100px;
     height: 100px;
@@ -254,9 +310,24 @@ header{
     font-weight: 800;
     padding: 10em 14.2em 0em 14.2em;
 }
+
+@media screen and (max-width: 640px) {
+    .comentario{
+        font-size: 15px;
+        padding: 10em 2em 0em 2em;
+    }
+    
+}
 .empresa{
     color:white;
     padding: 1em 0em 15em 0em;
+}
+
+@media screen and (max-width: 640px) {
+    .empresa{
+     padding: 1em 0em 13em 0em;
+     font-size: 10px;   
+    }
 }
 
 .maincontanto{
@@ -306,6 +377,23 @@ header{
     border-radius: 80px;
 }
 
+@media screen and (max-width: 640px) {
+    .contacto{
+     padding-left: 2em; 
+    }
+
+    .bloqueC{
+        flex-direction: column;
+    }
+    .bloqueC1{
+        width: 100%;
+        padding-left: 0em;
+        padding-top: 0em;
+        padding-bottom: 4em;
+        text-align: center;
+    }
+}
+
 form {
     margin: 40px 0;
 }
@@ -347,6 +435,13 @@ form label, form legend {
 .enviar:hover {
     background: rgb(214, 175, 74);
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 640px) {
+    .bloqueC2{
+        width: auto;
+        padding-left: 6em;
+    }
 }
 
 .bloquegris{
