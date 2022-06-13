@@ -153,6 +153,14 @@ header{
     }
 }
 
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    .titulo_principal{
+      font-size: 70px;
+    }
+    .subtitulo{
+        font-size: 25px;
+    }
+  }
 .parrafo{
     background-color: rgb(199,195,195);
 }
@@ -190,6 +198,12 @@ header{
 @media screen and (max-width: 640px) {
     .text{
         padding: 0em 2em 5em 1em;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    .text{
+        padding: 0em 2em 5em 2em;
     }
 }
 
@@ -261,6 +275,13 @@ header{
 
 }
 
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    .productos{
+        width: 640px;
+    }
+
+}
+
 
 .botonEnviar1{
     text-align: center;
@@ -291,6 +312,17 @@ header{
     }
 }
 
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    .botonEnviar1{
+        padding-top: 2em;
+        padding-bottom: 6em;
+
+    }
+    .enviar1{
+        width: 40%;
+    }
+}
+
 .imgA{
     width: 100px;
     height: 100px;
@@ -315,8 +347,13 @@ header{
     .comentario{
         font-size: 14px;
         padding: 10em 2em 0em 2em;
+    }   
+}
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    .comentario{
+        font-size: 20px;
+        padding: 10em 6.5em 0em 6.5em;
     }
-    
 }
 .empresa{
     color:white;
@@ -395,6 +432,17 @@ header{
     }
 }
 
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    .contacto{
+        padding-left: 3em;
+    }
+
+    .bloqueC1{
+        width: 35%;
+        padding: 2em;
+    }
+}
+
 form {
     margin: 40px 0;
 }
@@ -449,9 +497,25 @@ form label, form legend {
         width: 50%;
     }
 }
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    .bloqueC2{
+        width: 70%;
+        padding-left: 4em;
+        padding-top: 1.5em;
+    }
 
+    .enviar{
+        width: 70%;
+    }
+}
 .bloquegris{
     padding-left: 5em;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    .bloquegris{
+    padding-left: 2em;
+    }
 }
 
 .bloquefinal{
@@ -467,6 +531,12 @@ form label, form legend {
     
     .bloquefinal{
         padding: 2em;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    .input-padron{
+        width: 80%;
     }
 }
 
