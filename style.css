@@ -313,7 +313,7 @@ header{
 
 @media screen and (max-width: 640px) {
     .comentario{
-        font-size: 15px;
+        font-size: 14px;
         padding: 10em 2em 0em 2em;
     }
     
@@ -441,7 +441,8 @@ form label, form legend {
 @media screen and (max-width: 640px) {
     .bloqueC2{
         width: auto;
-        padding-left: 6em;
+        padding-left: 3em;
+        padding-top: 2em;
     }
 
     .enviar{
@@ -457,6 +458,18 @@ form label, form legend {
     padding: 5em;
     background: rgb(196 184 166);
 }
+
+@media screen and (max-width: 640px) {
+    .input-padron{
+        width: 90%;
+        padding: 5px 25px;
+    }
+    
+    .bloquefinal{
+        padding: 2em;
+    }
+}
+
 footer{
     text-align: center;
     background:#1c1e24;
