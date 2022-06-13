@@ -27,7 +27,7 @@ try {
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom($mail, $name);
+    $mail->setFrom('micorreo', $name);
     $mail->addAddress('vitamento@gmail.com');     //Add a recipient
     
 
@@ -42,7 +42,10 @@ try {
     $mail->CharSet="UTF-8";
     $mail->send();
 
-    echo 'header("Location:index.html")';
+    echo '<script>
+    alert ("El mensaje se envió correctamente");
+    window.history.go(-1); 
+    </script>';
 } catch (Exception $e){
     echo "Error...", $mail->ErrorInfo;
 }
