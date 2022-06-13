@@ -4,21 +4,46 @@ $mail = $_POST['mail'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
-$header = 'From: ' . $mail . " \r\n";
-$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
+$body= "Nombre: ".$name."<br>Correo: ".$mail."<br>Teléfono: ".$phone."<br>Mensaje: ".$message;
 
-$message = "Este mensaje fue enviado por: " . $name . " \r\n";
-$message .= "Su e-mail es: " . $mail . " \r\n";
-$message .= "Teléfono de contacto: " . $phone . " \r\n";
-$message .= "Mensaje: " . $_POST['message'] . " \r\n";
-$message .= "Enviado el: " . date('d/m/Y', time());
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-$para = 'vitamento@gmail.com';
-$asunto = 'Asunto-pagina';
+require 'PHPMailer/Exception.php';
+require 'PHPMailer/PHPMailer.php';
+require 'PHPMailer/SMTP.php';
 
-mail($para, $asunto, utf8_decode($message), $header);
+$mail = new PHPMailer(true);
 
-header("Location:index.html");
+try {
+    //Server settings
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->isSMTP();                                            //Send using SMTP
+    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+    $mail->Username   = 'micorreo';                     //SMTP username
+    $mail->Password   = 'clave';                               //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+    //Recipients
+    $mail->setFrom($mail, $name);
+    $mail->addAddress('vitamento@gmail.com');     //Add a recipient
+    
+
+    //Attachments
+    $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+    $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+
+    //Content
+    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->Subject = 'Envío desde la Página Web';
+    $mail->Body    = $body;
+    $mail->CharSet="UTF-8";
+    $mail->send();
+
+    echo 'header("Location:index.html")';
+} catch (Exception $e){
+    echo "Error...", $mail->ErrorInfo;
+}
 ?>
