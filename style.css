@@ -270,7 +270,7 @@ header{
 
 @media screen and (max-width: 640px) {
     .productos{
-        padding-left: 5em;
+        padding-left: 4.5em;
     }
     .productos li{
         display:block;
