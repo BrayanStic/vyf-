@@ -591,7 +591,7 @@ footer{
         width:70px;
         height:70px;
         position:fixed;
-        right:1em;
+        left:1em;
         bottom:1em;
         border-radius:50%;
         line-height:80px;
