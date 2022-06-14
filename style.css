@@ -467,6 +467,8 @@ form label, form legend {
     width: 70%;
     background: rgb(217, 213, 202);
     font-style:oblique;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(148, 137, 50, 0.5);
 }
 .botonEnviar{
     padding-left: 8em;
@@ -501,6 +503,10 @@ form label, form legend {
     .enviar{
         width: 50%;
     }
+    .bloquefinal{
+        padding: 5em;
+        background: rgb(196 184 166);
+    }
 }
 @media screen and (min-width: 640px) and (max-width: 1280px) {
     .bloqueC2{
@@ -513,9 +519,7 @@ form label, form legend {
         width: 70%;
     }
 }
-.bloquegris{
-    padding-left: 5em;
-}
+
 
 @media screen and (min-width: 640px) and (max-width: 1280px) {
     .bloquegris{
@@ -523,11 +527,17 @@ form label, form legend {
     }
 }
 
-.bloquefinal{
-    padding: 5em;
-    background: rgb(196 184 166);
-}
 
+
+@media screen and (min-width: 1280px){
+    .bloquegris{
+        padding-left: 5em;
+    }
+    .bloquefinal{
+        padding: 5em;
+        background: rgb(196 184 166);
+    }
+}
 @media screen and (max-width: 640px) {
     .input-padron{
         width: 90%;
@@ -551,6 +561,43 @@ footer{
     line-height:0;
     display:inline-block;
     width: 100%;
+}
+
+
+.what{
+        display:block;
+        width:70px;
+        height:70px;
+        color:#fff;
+        position: fixed;
+        right:4em;
+        bottom:4em;
+        border-radius:50%;
+        line-height:80px;
+        text-align:center;
+        z-index:999;
+}
+
+.what img:hover{
+    width:100px;
+    height:100px;
+}
+
+@media screen and (max-width: 640px) {
+ 
+    .what{
+      
+        display:block;
+        width:70px;
+        height:70px;
+        position:fixed;
+        right:1em;
+        bottom:1em;
+        border-radius:50%;
+        line-height:80px;
+        text-align:center;
+        z-index:999;
+}
 }
 /* area de practica*/
 
