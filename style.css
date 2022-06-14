@@ -666,15 +666,15 @@ hr{
 
     .subgris{
         font-size: 50px;
-        letter-spacing: -5px;
+        letter-spacing: -3px;
     }
     .subgris1{
         font-size: 45px;
-        letter-spacing: -5px;
+        letter-spacing: -3px;
     }
     .subdorado{
         font-size: 50px;
-        letter-spacing: -5px;
+        letter-spacing: -3px;
     }
 
 
@@ -697,6 +697,7 @@ hr{
 .mainE{
     display: flex;
     flex-direction: row;
+    background: rgb(235,238,242);
 
 }
 
@@ -763,7 +764,7 @@ hr{
 }
 
 .main2{
-    background: rgb(196,184,166);
+    background: rgb(235,238,242);
 }
 
 @media screen and (max-width: 640px) {
