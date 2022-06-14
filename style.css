@@ -684,29 +684,32 @@ hr{
     }
     .subgris{
         font-size: 35px;
-        letter-spacing: -4px
-
+        letter-spacing: -4px;
+        text-align: center;
     }
     .sub{
         font-size: 20px;
+        text-align: center;
     }
     .subdorado{
         font-size: 35px;
         letter-spacing: -4px;
+        text-align: center;
     }
 
     .subgris1{
         font-size: 30px;
         letter-spacing: -3px;
+        text-align: center;
     }
     .bloque1{
         width: 100%;
     }
     .text1{
         width: 250px;
-        padding: 1em 0em 1em 0em;
-        text-align:left;
+        padding: 1em 2em 1em 2em;
         font-size: 14px;
+        text-align: center;
     
     }
 }
