@@ -623,6 +623,64 @@ hr{
     height: 1px;
 }
 
+@media screen and (max-width: 640px) {
+    .main{
+        padding: 5em 3em;
+    }
+    .bloque{
+        flex-direction: column;
+    }
+    .subgris{
+        font-size: 35px;
+        letter-spacing: -4px
+
+    }
+    .sub{
+        font-size: 20px;
+    }
+    .subdorado{
+        font-size: 35px;
+        letter-spacing: -4px;
+    }
+
+    .subgris1{
+        font-size: 30px;
+        letter-spacing: -3px;
+    }
+    .bloque1{
+        width: 100%;
+    }
+    .text1{
+        width: 250px;
+        padding: 1em 0em 1em 0em;
+        text-align:left;
+        font-size: 14px;
+    
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    .main{
+        padding: 5em 2em;
+    }
+
+    .subgris{
+        font-size: 50px;
+        letter-spacing: -5px;
+    }
+    .subgris1{
+        font-size: 45px;
+        letter-spacing: -5px;
+    }
+    .subdorado{
+        font-size: 50px;
+        letter-spacing: -5px;
+    }
+
+
+}
+  
+
 /* Equipo de trabajo*/
 
 .imgZ{
