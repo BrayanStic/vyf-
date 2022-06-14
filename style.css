@@ -772,6 +772,14 @@ hr{
     background: rgb(235,238,242);
 }
 
+.imgE1{
+    width: 698px;
+    height: 966px;
+}
+.imgM1{
+    width: 698px;
+    height: 966px;
+}
 @media screen and (max-width: 640px) {
     .mainE{
         flex-direction: column;
@@ -781,6 +789,11 @@ hr{
         height: 400px;
         text-align: center;
         padding-left: 7em;
+    }
+
+    .imgE1, .imgM1{
+        width: 388px;
+        height: 600px;
     }
 
     .bloqueE{
